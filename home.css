@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e2a37;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    transform: translateX(-250px); /* Hide sidebar by default */
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #c5a678;
+    color: #f0f0f0;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 0; /* Reset margin for responsive behavior */
+    padding: 16px;
+    transition: margin-left 0.3s;
+}
+
+/* Open button */
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color:#1e2a37;
+    color: white;
+    padding: 10px;
+    border: none;
+    display: none; /* Hidden by default */
+}
+
+p{
+    font-size:25px;
+    font-weight: bold;
+    color:#1e2a37;
+}
+
+h1{
+font-size:40px ;
+font-weight: bold;
+color:#1e2a37;
+}
+
+i{
+font-size: 25px;
+margin-bottom: 20px;
+}
+
+
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .sidebar {
+        transform: translateX(0); /* Show sidebar by default on larger screens */
+    }
+
+    .main-content {
+        margin-left: 250px; /* Leave space for the sidebar */
+    }
+
+    .open-btn {
+        display: none; /* Hide open button on larger screens */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .open-btn {
+        display: block; /* Show open button on smaller screens */
+    }
+}

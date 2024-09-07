@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#f0f0f0;
+   
+}
+
+#error{
+    color: red;
+    font-weight:200px;
+}
+
+.header{
+    display: block;
+    text-align: center;
+    background-image: cover; 
+}
+
+
+h1{
+    background-color: #1e2a37;
+    color:#c5a678;
+    font-family: Arial;
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+
+.main {
+        background-color:#c5a678;
+        color:#1e2a37;
+        font-weight: 700;
+}
+
+.bx-left-arrow-alt{
+color: #1e2a37;
+font-size: 30px;
+margin-right: 205px;
+}
+
+.input{
+    padding: 10px 10px 10px 10px;
+}
+ 
+.input label{
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.input input{
+    padding-left:16px;
+    width: 250px;
+    height: 40px;
+    border: solid #c5a678 2px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    font-size: 16px;
+    text-align: center;
+    color: #1e2a37;
+}
+
+.input-1{
+    padding: 10px 10px 10px 10px;  
+}
+
+.input-1 label{
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.input-1 select{
+    padding-left: 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 250px;
+    height: 40px;
+    border: solid #1e2a37 2px;
+    color: #1e2a37;
+    text-align: center;
+}
+
+button{
+    padding: 10px 10px 10px 10px;
+    width: 250px;
+    height: 40px;
+    border: solid #1e2a37 2px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #1e2a37;
+    color: #c5a678;
+    margin-top: 15px;
+}
+button:hover{
+    background-color:#c5a678;
+    cursor: pointer;
+   
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+   
+}
+.bxl-facebook-square{
+    color:#1e2a37;
+    font-weight: bold;
+    font-size:40px ;
+  
+}
+
+.bxl-linkedin-square{
+    color: #1e2a37;
+    font-weight: bold;
+    font-size:40px ;
+}
+
+.bxl-apple{
+    color: #1e2a37;
+    font-weight: bold;
+    font-size:40px ;   
+}
+.log2{ 
+    color: #f0f0f0;
+    font-size: 20px;   
+}
+
+@media only screen and (max-width:800px){
+    h1 {
+        font-size: 30px;
+    }
+p{
+    font-size: 16px;
+}
+.header{
+    width: 100%;
+}
+}
